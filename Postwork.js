@@ -74,7 +74,8 @@ function frequency(string) {
             rep[caracter] = 1;
         }
     }
-    return rep;
+    let oKeys = Object.fromEntries(Object.entries(rep).sort());
+    return oKeys;
 }
 
 console.log('Test 1:', frequency('cccbbbaaa'))
