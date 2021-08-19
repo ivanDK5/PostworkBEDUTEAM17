@@ -1,35 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>Proyecto Fase 2</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qué vamos a comer?</title>
 </head>
-
 <body>
-    <nav class="navbar  navbar-expand-sm bg-light navbar-light">
-        <!-- Boton para el menu desplegable -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- contenedor de los enlaces del menu -->
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <!-- Links -->
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <!-- agregue la clase .active a un elemento <a> para resaltar el enlace actual, o la clase .disabled para indicar que el enlace no se puede hacer clic. -->
-                    <a class="nav-link active" href="#">Link 1</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Link 2</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link 3</a>
-                </li>
-            </ul>
+    <header>
+        <h1> <b>Qué vamos a comer hoy?</b></h1>
+        <h3>Busca una receta</h3>
+        <div class="buscador">
+            <input id="search" class="form-control form-control-lg" type="text" placeholder="Receta" width="20%">
+            <button type="button" id="btn_buscar" class="btn btn-danger btn-lg">Buscar</button>
         </div>
-    </nav>
-    <h1>Proyecto Fase 2 Team 17</h1>
+        <h3>Prueba algo nuevo</h3>
+        <button type="button" id="btn_random" class="btn btn-danger btn-lg">Receta Random</button>
+    </header>
+    <section id="container-fluid">
+        <div id="card-group" class="card-group"></div>
+    </section>
+    <section id="receta">
+        <div id="ingredientes" class="card-group"></div>
+    </section>
 </body>
-
 </html>
